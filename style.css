@@ -41,10 +41,10 @@ h1, h2, h3, h4 { letter-spacing: -0.03em; font-weight: 800; line-height: 1.1; }
 
 .navbar { position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; padding: 1rem 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
 .nav-container { display: flex; justify-content: space-between; align-items: center; }
-.nav-logo-wrap { background: #FFFFFF; border-radius: 8px; padding: 0 12px; height: 44px; display: inline-flex; align-items: center; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
-.brand-logo { height: 28px; width: auto; object-fit: contain; }
+.nav-logo-wrap { background: #FFFFFF; border-radius: 8px; padding: 0 12px; height: 48px; display: inline-flex; align-items: center; box-shadow: 0 4px 20px rgba(0,0,0,0.1); flex-shrink: 0; }
+.brand-logo { height: 32px; width: auto; object-fit: contain; }
 
-.btn { display: inline-flex; align-items: center; justify-content: center; font-family: var(--font-main); font-weight: 700; padding: 0.8rem 1.8rem; height: 44px; border-radius: 8px; font-size: 0.95rem; cursor: pointer; transition: var(--transition); border: none; text-decoration: none; }
+.btn { display: inline-flex; align-items: center; justify-content: center; font-family: var(--font-main); font-weight: 700; padding: 0.8rem 1.8rem; height: 48px; border-radius: 8px; font-size: 0.95rem; cursor: pointer; transition: var(--transition); border: none; text-decoration: none; flex-shrink: 0; }
 .btn-primary { background: var(--primary-orange); color: #000; border: 1px solid rgba(255, 150, 83, 0.5); }
 .btn-primary.glow-orange:hover { box-shadow: 0 0 25px rgba(255, 150, 83, 0.6); transform: translateY(-2px); background: #ffaa75; }
 .btn-outline { background: transparent; color: var(--primary-orange); border: 1px solid var(--primary-orange); }
@@ -126,9 +126,9 @@ h1, h2, h3, h4 { letter-spacing: -0.03em; font-weight: 800; line-height: 1.1; }
 }
 
 @media (max-width: 768px) {
-  .hero { padding-top: 8rem; }
-  .nav-container { gap: 1rem; }
-  .btn-outline { font-size: 0.85rem; padding: 0.6rem 1.2rem; }
+  .hero { padding-top: 10rem; }
+  .nav-container { gap: 0.5rem; justify-content: space-around; width: 100%; }
+  .btn-outline { font-size: 0.75rem; padding: 0.5rem 1rem; height: 48px; }
   .timeline-container { padding-left: 0; }
   .timeline-line-track, .timeline-line-glow { display: none; }
   .step-indicator { position: relative; left: auto; top: auto; transform: none; margin-bottom: 1rem; display: inline-flex; }
