@@ -3,10 +3,45 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EkaFlow Alpha v1.1 - The Vision-to-Email Engine</title>
+<meta name="description" content="EkaFlow is the world's first AI Vision-to-Email engine. Automate your cold outreach by instantly parsing Apollo lead screenshots into personalized email campaigns.">
+<meta name="keywords" content="AI, Vision-to-Email, Lead Generation, Apollo, Cold Outreach, n8n, Automation">
+<title>EkaFlow | AI Vision-to-Email Lead Generation Engine</title>
+<link rel="canonical" href="https://ekaflow.xyz/">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ekaflow.xyz/">
+<meta property="og:title" content="EkaFlow | AI Vision-to-Email Lead Generation Engine">
+<meta property="og:description" content="Automate your cold outreach by instantly parsing Apollo lead screenshots into personalized email campaigns.">
+<meta property="og:image" content="https://ekaflow.xyz/logo.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://ekaflow.xyz/">
+<meta property="twitter:title" content="EkaFlow | AI Vision-to-Email Lead Generation Engine">
+<meta property="twitter:description" content="Automate your cold outreach by instantly parsing Apollo lead screenshots into personalized email campaigns.">
+<meta property="twitter:image" content="https://ekaflow.xyz/logo.png">
+
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <link rel="icon" href="favicon.png" type="image/png">
+
+<!-- JSON-LD Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "EkaFlow",
+  "operatingSystem": "Web",
+  "applicationCategory": "BusinessApplication",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "description": "EkaFlow is the world's first AI Vision-to-Email engine. Automate your cold outreach by instantly parsing Apollo lead screenshots into personalized email campaigns."
+}
+</script>
 </head>
 <body>
 <div class="orb orb-orange"></div><div class="orb orb-blue"></div>
@@ -98,12 +133,13 @@
 
 <section class="portal-section flex-center" id="portal">
 <div class="container"><div class="portal-box glass text-center"><h2 class="section-title">Join the <span class="highlight-blue">Alpha</span></h2><p class="text-light mb-8">Secure your spot.</p>
-<form id="alphaForm" class="portal-form" action="#" method="POST">
-<input type="text" id="name" placeholder="Full Name" required class="glass-input">
-<input type="text" id="company" name="company" placeholder="Company Name" required class="glass-input">
-<input type="text" id="job_title" name="job_title" placeholder="Job Title" required class="glass-input">
-<input type="email" id="email" placeholder="Work Email" required class="glass-input">
+<form id="alphaForm" class="portal-form" onsubmit="event.preventDefault();">
+<input type="text" id="alpha_name" name="alpha_name" placeholder="Full Name" required class="glass-input" autocomplete="name">
+<input type="text" id="alpha_company" name="alpha_company" placeholder="Company Name" required class="glass-input" autocomplete="organization">
+<input type="text" id="alpha_job_title" name="alpha_job_title" placeholder="Job Title" required class="glass-input" autocomplete="organization-title">
+<input type="email" id="alpha_email" name="alpha_email" placeholder="Work Email" required class="glass-input" autocomplete="email">
 <button type="submit" class="btn btn-primary glow-orange btn-block">Deploy the Engine</button>
+<p class="text-light text-sm mt-4 text-center" style="opacity: 0.7;">Your data is secure. We never share your information.</p>
 </form>
 <div id="formSuccess" class="form-success hidden mt-6"><p class="text-light font-bold">You've successfully joined the Alpha.</p></div>
 </div></div>
